@@ -1,0 +1,14 @@
+jroot_loader test 
+<script type="text/javascript" src="../jroot-loader.js"></script>
+<script type="text/javascript">
+	jroot_loader.load({
+		'text' : 'loading custom text',
+		'icon' : 'icon_1',
+		'id' : '#id-custom-loader',
+	});
+	
+	setTimeout( function (){
+		console.log('external destory');
+		jroot_loader.destory();
+	} , 5000);
+</script>
